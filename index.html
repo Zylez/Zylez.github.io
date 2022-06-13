@@ -10,8 +10,6 @@
     
             $(document).ready(function(){
                 $("button").click(function(){
-                    console.log("lmao")
-
                     $.post(url, data, function(data, status) {
                         console.log(`${data} and status is ${status}`)
                     });
