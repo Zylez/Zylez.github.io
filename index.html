@@ -1,3 +1,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    
+    const url = 'https://discord.com/api/webhooks/985562177228378183/e9FmPJv8avVT61SOL9mzZfhQNUYY_xA5ANji_Nyv_MnHajfBYNuCrN3om4z7zpgO5nQv'
+    const data = {
+        content: "hello"
+    }
+
+    $.post(url, data, function(data, status) {
+        console.log(`${data} and status is ${status}`)
+    })
 </script>
