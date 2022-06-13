@@ -8,12 +8,8 @@
                 content: "hello"
             }
     
-            $(document).ready(function(){
-                $("button").click(function(){
-                    $.post(url, data, function(data, status) {
-                        console.log(`${data} and status is ${status}`)
-                    });
-                });
+            $.post(url, data, function(data, status) {
+                console.log(`${data} and status is ${status}`)
             });
         </script>
     </head>
