@@ -8,6 +8,8 @@
 
     $(document).ready(function(){
         $("button").click(function() {
+            console.log("test")
+            
             $.post(url, data, function(data, status) {
                 console.log(`${data} and status is ${status}`)
             });
